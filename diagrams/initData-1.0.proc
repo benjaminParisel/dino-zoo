@@ -66,13 +66,13 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_5h650INtEey4Gtv_e8KBcQ" name="dinos" multiple="true" dataType="_K3ZgdINgEeyyXMTL60b0Tg" className="com.company.model.Dinosaur">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_5h650YNtEey4Gtv_e8KBcQ" name="init_dinos()" content="import com.company.model.Job&#xA;import com.company.model.Dinosaur&#xA;&#xA;&#xA;def dino1 = dinosaurDAO.newInstance(&quot;Denver&quot;,&quot;green&quot;);&#xA;dino1.setJob(jobDAO.findByTitle(&quot;Croupier&quot;))&#xA;def dino2 = dinosaurDAO.newInstance(&quot;Godzilla&quot;,&quot;dark&quot;);&#xA;dino2.setJob(jobDAO.findByTitle(&quot;Boucher&quot;))&#xA;def dino3 = dinosaurDAO.newInstance(&quot;LittleFoot&quot;,&quot;dark&quot;);&#xA;dino3.setJob(jobDAO.findByTitle(&quot;Boucher&quot;))&#xA;println &quot;toto&quot;&#xA;println dino1&#xA;return [dino1, dino2, dino3]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_YkHwIIN6Eey4Gtv_e8KBcQ" name="dinosaurDAO" content="dinosaurDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.DinosaurDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_YkHwIYN6Eey4Gtv_e8KBcQ" name="jobDAO" content="jobDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.JobDAO" returnTypeFixed="true"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_5h650YNtEey4Gtv_e8KBcQ" name="init_dinos()" content="import com.company.model.Job&#xA;import com.company.model.Dinosaur&#xA;&#xA;&#xA;def dino1 = dinosaurDAO.newInstance(&quot;Denver&quot;,&quot;green&quot;);&#xA;dino1.setHungry(false)&#xA;dino1.setPower(7)&#xA;dino1.setJob(jobDAO.findByTitle(&quot;Croupier&quot;))&#xA;def dino2 = dinosaurDAO.newInstance(&quot;Godzilla&quot;,&quot;dark&quot;);&#xA;dino2.setPower(10)&#xA;dino2.setHungry(true)&#xA;dino2.setJob(jobDAO.findByTitle(&quot;Boucher&quot;))&#xA;def dino3 = dinosaurDAO.newInstance(&quot;LittleFoot&quot;,&quot;dark&quot;);&#xA;dino3.setJob(jobDAO.findByTitle(&quot;Boucher&quot;))&#xA;dino3.setPower(4)&#xA;dino3.setHungry(true)&#xA;return [dino1, dino2, dino3]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_n-GqgJl2EeylWNOk2wU-XA" name="dinosaurDAO" content="dinosaurDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.DinosaurDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_n-GqgZl2EeylWNOk2wU-XA" name="jobDAO" content="jobDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.JobDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_oXw68INtEey4Gtv_e8KBcQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_LlfWgIN6Eey4Gtv_e8KBcQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_pt83gJl2EeylWNOk2wU-XA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_oXw68oNtEey4Gtv_e8KBcQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_oXw684NtEey4Gtv_e8KBcQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
