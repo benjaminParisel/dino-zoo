@@ -1,0 +1,32 @@
+<uid-text ng-if="!properties.labelHidden && !properties.allowHTML"
+	label="{{properties.label}}"
+	label-position="{{properties.labelPosition}}"
+	label-width="{{properties.labelWidth}}"
+	text="{{properties.text}}"
+	alignment="{{properties.alignment}}"
+	></uid-text>
+<uid-text ng-if="properties.labelHidden && !properties.allowHTML"
+	label-hidden
+	label="{{properties.label}}"
+	label-position="{{properties.labelPosition}}"
+	label-width="{{properties.labelWidth}}"
+	text="{{properties.text}}"
+	alignment="{{properties.alignment}}"
+	></uid-text>
+<uid-text ng-if="!properties.labelHidden && properties.allowHTML"
+	allow-html
+	label="{{properties.label}}"
+	label-position="{{properties.labelPosition}}"
+	label-width="{{properties.labelWidth}}"
+	text="{{properties.text}}"
+	alignment="{{properties.alignment}}"
+	></uid-text>
+<uid-text ng-if="properties.labelHidden && properties.allowHTML"
+	label-hidden
+	allow-html
+	label="{{properties.label}}"
+	label-position="{{properties.labelPosition}}"
+	label-width="{{properties.labelWidth}}"
+	text="{{properties.text}}"
+	alignment="{{properties.alignment}}"
+	></uid-text>

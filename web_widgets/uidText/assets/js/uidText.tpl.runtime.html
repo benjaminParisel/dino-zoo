@@ -1,0 +1,32 @@
+<uid-text *ngIf="!properties.labelHidden && !properties.allowHTML"
+	[label]="properties.label"
+	labelPosition="{{properties.labelPosition}}"
+	labelWidth="{{properties.labelWidth}}"
+	[text]="properties.text"
+	alignment="{{properties.alignment}}"
+	></uid-text>
+<uid-text *ngIf="properties.labelHidden && !properties.allowHTML"
+	label-hidden
+	[label]="properties.label"
+	labelPosition="{{properties.labelPosition}}"
+	labelWidth="{{properties.labelWidth}}"
+	[text]="properties.text"
+	alignment="{{properties.alignment}}"
+	></uid-text>
+<uid-text *ngIf="!properties.labelHidden && properties.allowHTML"
+	allow-html
+	[label]="properties.label"
+	labelPosition="{{properties.labelPosition}}"
+	labelWidth="{{properties.labelWidth}}"
+	[text]="properties.text"
+	alignment="{{properties.alignment}}"
+	></uid-text>
+<uid-text *ngIf="properties.labelHidden && properties.allowHTML"
+	label-hidden
+	allow-html
+	[label]="properties.label"
+	labelPosition="{{properties.labelPosition}}"
+	labelWidth="{{properties.labelWidth}}"
+	[text]="properties.text"
+	alignment="{{properties.alignment}}"
+	></uid-text>

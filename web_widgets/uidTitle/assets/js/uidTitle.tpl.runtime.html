@@ -1,0 +1,11 @@
+<uid-title *ngIf="!properties.allowHTML"
+	[text]="properties.text"
+	alignment="{{properties.alignment}}"
+	level="{{properties.level}}"
+	></uid-title>
+<uid-title *ngIf="properties.allowHTML"
+	allow-html
+	[text]="properties.text"
+	alignment="{{properties.alignment}}"
+	level="{{properties.level}}"
+	></uid-title>

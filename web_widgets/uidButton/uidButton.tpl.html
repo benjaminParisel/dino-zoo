@@ -1,0 +1,11 @@
+<uid-button ng-if="!properties.disabled"
+	label="{{properties.label}}"
+	alignment="{{properties.alignment}}"
+	action="{{properties.action}}"
+	></uid-button>
+<uid-button ng-if="properties.disabled"
+	disabled
+	label="{{properties.label}}"
+	alignment="{{properties.alignment}}"
+	action="{{properties.action}}"
+	></uid-button>
